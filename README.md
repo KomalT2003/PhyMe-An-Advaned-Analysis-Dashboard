@@ -1,4 +1,4 @@
-# PhyMe
+# PhyMe - No more afraid of Physics
 
 PhyMe is an advanced dashboard built for students and teachers on plotly dash. 
 1. Built to help students achieve better by preparing for exams module wise, topic wise, category of questions wise, and providing them with the exact set of topics in each module, marks associated with the topic and each question with marks, difficulty. This allows students to prepare for easy questions with more weightage module. Topics with highest number of weightage and type of questions like mcq are the best. 
