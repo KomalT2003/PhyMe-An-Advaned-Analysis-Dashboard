@@ -19,7 +19,7 @@ app.layout = html.Div(className="overflow-hidden overscroll-contain bg-gray-900 
             html.H1('PhyMe', className='ml-5 text-5xl font-bold'),
             html.Div(className="flex gap-5 mr-5", children=[
                 html.A('Students', href='https://phyme-an-advaned-analysis-dashboard.onrender.com/', className='p-2  border-2 rounded-md bg-gray-800 hover:text-gray-400 focus:outline-none '),
-                html.A('Teachers', href='http://localhost:3000', className='p-2 -ml-2 border-2 rounded-md bg-gray-800 hover:text-gray-400 focus:outline-none')
+                html.A('Teachers', href='https://phyme-an-advaned-analysis-dashboard-08q6.onrender.com/', className='p-2 -ml-2 border-2 rounded-md bg-gray-800 hover:text-gray-400 focus:outline-none')
             ])
         ]),
         html.Div(className="bg-gray-900 text-yellow-300 bg-cover flex-col ", children=[
