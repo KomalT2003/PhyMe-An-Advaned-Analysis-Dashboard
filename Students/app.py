@@ -9,7 +9,7 @@ app.config.suppress_callback_exceptions = True
 
 server = app.server
 
-app.layout = html.Div(className="overflow-hidden overscroll-contain bg-gray-900 h-100 bg-cover ",children=[ 
+app.layout = html.Div(className="overflow-hidden overscroll-contain bg-gray-900 h-100 bg-cover min-h-screen",children=[ 
     html.Link(
         rel='stylesheet',
         href='https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css'

@@ -14,7 +14,7 @@ app.layout = html.Div([
         rel='stylesheet',
         href='https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css'
     ),
-    html.Div(className="bg-gray-900 text-yellow-300 min-h-screen bg-cover ", children=[
+    html.Div(className="bg-gray-900 text-yellow-300 min-h-screen bg-cover min-h-screen", children=[
         html.Nav(className="flex justify-between items-center border-b border-gray-800 p-4", children=[
             html.H1('PhyMe', className='ml-5 text-5xl font-bold'),
             html.Div(className="flex gap-5 mr-5", children=[
