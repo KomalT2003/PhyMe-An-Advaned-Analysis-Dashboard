@@ -7,6 +7,8 @@ import plotly.graph_objects as go
 app = dash.Dash(__name__)
 app.config.suppress_callback_exceptions = True
 
+server = app.server
+
 app.layout = html.Div([
     html.Link(
         rel='stylesheet',

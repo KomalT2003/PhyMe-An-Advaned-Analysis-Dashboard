@@ -9,28 +9,28 @@ app.config.suppress_callback_exceptions = True
 
 server = app.server
 
-app.layout = html.Div([
+app.layout = html.Div(className="overflow-hidden overscroll-contain bg-gray-900 h-100 bg-cover ",children=[ 
     html.Link(
         rel='stylesheet',
         href='https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css'
     ),
-    html.Div(className="bg-gray-900 text-yellow-300 min-h-screen bg-cover ", children=[
-        html.Nav(className="flex justify-between items-center border-b border-gray-800 p-4", children=[
+    html.Div(className="overflow-hidden overscroll-contain bg-gray-900 text-yellow-300 min-h-screen bg-cover ", children=[
+        html.Nav(className=" flex justify-between items-center border-b border-gray-800 p-4", children=[
             html.H1('PhyMe', className='ml-5 text-5xl font-bold'),
             html.Div(className="flex gap-5 mr-5", children=[
-                html.A('Students', href='http://localhost:5000', className='p-2  border-2 rounded-md bg-gray-800 hover:text-gray-400 focus:outline-none '),
+                html.A('Students', href='https://phyme-an-advaned-analysis-dashboard.onrender.com/', className='p-2  border-2 rounded-md bg-gray-800 hover:text-gray-400 focus:outline-none '),
                 html.A('Teachers', href='http://localhost:3000', className='p-2 -ml-2 border-2 rounded-md bg-gray-800 hover:text-gray-400 focus:outline-none')
             ])
         ]),
-        html.Div(className="bg-gray-900 text-yellow-300 bg-cover flex flex-row ", children=[
-            html.Div(className="mt-10 mb-10 flex flex-col bg-gray-800 text-white flex justify-center items-center p-4 rounded-md", children=[
-                html.Button("Overall", id="performance-button", n_clicks=0, className="mt-60 bg-gray-900 rounded-md w-60 py-2 px-2 mb-2 hover:bg-gray-600 hover:text-yellow-400 focus:outline-none"),
+        html.Div(className="bg-gray-900 text-yellow-300 bg-cover flex-col ", children=[
+            html.Div(className="flex gap-4 justify-center bg-gray-800 text-white items-center p-4 rounded-md", children=[
+                html.Button("Overall", id="performance-button", n_clicks=0, className="bg-gray-900 rounded-md w-60 py-2 px-2 mb-2 hover:bg-gray-600 hover:text-yellow-400 focus:outline-none"),
                 html.Button("Module 1", id="module1-button", n_clicks=0, className="bg-gray-900 rounded-md w-60 py-2 px-2 mb-2 hover:bg-gray-600 hover:text-yellow-400 focus:outline-none"),
                 html.Button("Module 2", id="module2-button", n_clicks=0, className="bg-gray-900 rounded-md w-60 py-2 px-4 mb-2 hover:bg-gray-600 hover:text-yellow-400 focus:outline-none"),
                 html.Button("Module 3", id="module3-button", n_clicks=0, className="bg-gray-900 rounded-md w-60 py-2 px-4 mb-2 hover:bg-gray-600 hover:text-yellow-400 focus:outline-none"),
-                html.Button("Self study", id="module4-button", n_clicks=0, className="mb-60 bg-gray-900 rounded-md w-60 py-2 px-4 mb-2 hover:bg-gray-600 hover:text-yellow-400 focus:outline-none")
+                html.Button("Self study", id="module4-button", n_clicks=0, className="bg-gray-900 rounded-md w-60 py-2 px-4 mb-2 hover:bg-gray-600 hover:text-yellow-400 focus:outline-none")
             ], id='sidebar'),
-            html.Div(className="flex flex-col", children=[
+            html.Div(className="flex flex-col justify-center items-center", children=[
                 html.Div(className='flex h-24 bg-gray-900 text-blue-300 p-4 rounded-md ml-5', children=[ 
                     html.Button("ISE Exam", id="ise-button", className="border-2 w-72 mx-2 py-2 px-4 bg-gray-800 hover:bg-gray-600 rounded-md hover:text-yellow-400 focus:outline-none"),
                     html.Button("MSE Exam", id="mse-button", className="border-2 w-72 mx-2 py-2 px-4 bg-gray-800 hover:bg-gray-600 rounded-md hover:text-yellow-400 focus:outline-none"),
@@ -45,6 +45,7 @@ app.layout = html.Div([
         ])
     ])
 ])
+
 
 
 

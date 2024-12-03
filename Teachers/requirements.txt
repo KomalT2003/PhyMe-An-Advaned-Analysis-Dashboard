@@ -1,0 +1,6 @@
+dash
+pandas
+Flask
+Flask-cors
+numpy
+gunicorn
